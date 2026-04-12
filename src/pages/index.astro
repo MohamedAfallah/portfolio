@@ -1,0 +1,264 @@
+---
+const nombre = "Mohamed Afallah"; 
+const especialidad = "Desarrollador de Aplicaciones Multiplataforma";
+const ciudad = "Madrid, España";
+const email = "mohaparla184@gmail.com";
+const linkedin = "https://www.linkedin.com/in/mohamed-afallah-8950851b1/";
+const github = "https://github.com/MohamedAfallah";
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/moha.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Portfolio | {nombre} - {especialidad}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<main>
+			<header>
+				<p class="location">📍 {ciudad}</p>
+				<h1>Hola, soy <span class="text-gradient">{nombre}</span></h1>
+				<p class="role">{especialidad}</p>
+			</header>
+			
+			<section id="sobre-mi">
+				<h2>Perfil Profesional</h2>
+				<p>
+					Desarrollador con un sólido conocimiento en programación y bases de datos. 
+					Mi enfoque se centra en aportar soluciones tecnológicas innovadoras mediante el análisis detallado 
+					y la implementación de arquitecturas limpias. Especializado en el desarrollo de software de escritorio para optimización de procesos industriales y ecosistemas Android nativos.
+				</p>
+			</section>
+
+			<section id="habilidades">
+				<h2>Stack Tecnológico & Idiomas</h2>
+				<div class="skills-grid">
+					<div class="skill-category">
+						<span class="category-title">Lenguajes</span>
+						<p>Java (Desktop/Android), Kotlin, VB.NET, Python (Básico), SQL</p>
+					</div>
+					<div class="skill-category">
+						<span class="category-title">Arquitectura y Datos</span>
+						<p>MVVM, Gestión de ERP, Apache POI, Firebase (NoSQL), Microservicios, Hilt (DI)</p>
+					</div>
+					<div class="skill-category">
+						<span class="category-title">Herramientas & Dev</span>
+						<p>Git, GitHub, JavaFX, Retrofit 2, Networking (REST), Lottie, Glide</p>
+					</div>
+					<div class="skill-category">
+						<span class="category-title">Idiomas</span>
+						<p><strong>Español:</strong> Nativo</p>
+						<p><strong>Árabe:</strong> Nativo / Bilingüe</p>
+						<p><strong>Inglés:</strong> Técnico (Documentación)</p>
+						<p><strong>Francés:</strong> Competencia profesional</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="proyectos">
+				<h2>Proyectos Destacados</h2>
+				
+				<div class="proyecto-card" style="margin-bottom: 3rem; border-left: 4px solid var(--primary);">
+					<div class="header-proyecto">
+						<h3>💼 Business Central Data Automator</h3>
+						<span class="tag">Solución Corporativa</span>
+					</div>
+					
+					<p>
+						Software de escritorio profesional diseñado para automatizar la transformación de datos técnicos desde archivos Excel complejos hacia las plantillas maestras requeridas por el ERP <strong>Microsoft Dynamics 365 Business Central</strong>.
+					</p>
+
+					<div class="tech-stack">
+						<span>Java 17</span>
+						<span>Apache POI</span>
+						<span>Business Central</span>
+						<span>Data ETL</span>
+					</div>
+
+					<ul class="detalles-tecnicos">
+						<li><strong>ETL Process:</strong> Mapeo automático de datos técnicos hacia estructuras de Business Central.</li>
+						<li><strong>Optimización:</strong> Generación masiva de plantillas, eliminando errores manuales.</li>
+						<li><strong>Impacto:</strong> Digitalización de procesos en el sector ingeniería.</li>
+					</ul>
+					
+					<div class="privacidad-badge">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+						<span>Código privado - Empresa Real</span>
+					</div>
+				</div>
+
+				<div class="proyecto-card">
+					<div class="header-proyecto">
+						<h3>🎵 MohaBeats — Streaming App</h3>
+						<span class="tag">TFG DAM</span>
+					</div>
+					
+					<p>Sistema de streaming musical nativo con arquitectura desacoplada y consumo de la API de iTunes.</p>
+
+					<div class="tech-stack">
+						<span>Kotlin</span>
+						<span>Hilt</span>
+						<span>Firebase</span>
+						<span>DeepSeek AI</span>
+					</div>
+
+					<ul class="detalles-tecnicos">
+						<li><strong>Arquitectura:</strong> MVVM con Inyección de Dependencias.</li>
+						<li><strong>IA:</strong> Chatbot integrado para asistencia personalizada.</li>
+						<li><strong>UI:</strong> Animaciones Lottie y Glide.</li>
+					</ul>
+
+					<div class="botones">
+						<a href="https://github.com/MohamedAfallah/MohaBeats/" target="_blank" class="btn-github">Ver Código</a>
+					</div>
+				</div>
+			</section>
+
+			<section id="formacion">
+				<h2>Formación</h2>
+				<div class="educacion-item">
+					<p><strong>FP Superior DAM</strong></p>
+					<span>IES Enrique Tierno Galván | 2022 - 2025</span>
+				</div>
+				<div class="educacion-item">
+					<p><strong>Bachillerato de Ciencias</strong></p>
+					<span>2020 - 2022</span>
+				</div>
+			</section>
+
+			<footer>
+				<div class="footer-content">
+					<h2>Conectemos</h2>
+					<p>¿Interesado en mi perfil para nuevos retos de automatización o desarrollo móvil?</p>
+					<div class="social-links">
+						<a href={`mailto:${email}`} title="Enviar Email" class="social-icon gmail">
+							<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+						</a>
+						
+						<a href={linkedin} target="_blank" title="Perfil de LinkedIn" class="social-icon linkedin">
+							<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+						</a>
+
+						<a href={github} target="_blank" title="Perfil de GitHub" class="social-icon github">
+							<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+						</a>
+					</div>
+					<p class="footer-note">© 2026 {nombre}</p>
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>
+
+<style>
+	:root {
+		--primary: #4f39fa;
+		--secondary: #da62c4;
+		--bg: #0a0c10;
+		--card-bg: #111418;
+		--text: #ffffff;
+		--text-muted: #a0a0a0;
+		--font-main: 'Inter', system-ui, sans-serif;
+	}
+
+	* { box-sizing: border-box; }
+
+	body {
+		font-family: var(--font-main);
+		background: var(--bg);
+		color: var(--text);
+		max-width: 900px;
+		margin: auto;
+		padding: 4rem 1.5rem;
+		line-height: 1.6;
+		overflow-x: hidden;
+	}
+
+	header { margin-bottom: 4rem; text-align: center; }
+	h1 { font-size: clamp(2.5rem, 8vw, 4rem); margin: 0; letter-spacing: -2px; font-weight: 800; line-height: 1.1; }
+	
+	.text-gradient {
+		background: linear-gradient(45deg, var(--primary), var(--secondary));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	
+	.role { font-size: clamp(1.2rem, 4vw, 1.8rem); color: var(--text-muted); margin: 1rem 0; font-weight: 500; }
+	.location { color: var(--primary); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; display: block;}
+
+	h2 { font-size: 1.8rem; border-bottom: 2px solid #222; padding-bottom: 0.5rem; margin-bottom: 2rem; margin-top: 4rem; }
+
+	.skills-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1.5rem;
+	}
+	.skill-category {
+		background: var(--card-bg);
+		padding: 1.5rem;
+		border-radius: 12px;
+		border: 1px solid #1c2126;
+	}
+	.category-title { color: var(--secondary); font-weight: 700; display: block; margin-bottom: 0.5rem; font-size: 1rem; text-transform: uppercase; }
+	.skill-category p { font-size: 0.9rem; color: #ccc; margin: 0.5rem 0; }
+
+	.proyecto-card {
+		background: var(--card-bg);
+		padding: clamp(1.5rem, 5vw, 3rem);
+		border-radius: 16px;
+		border: 1px solid #1c2126;
+	}
+	.header-proyecto { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+	.header-proyecto h3 { font-size: 1.3rem; margin: 0; }
+	.tag { background: rgba(79, 57, 250, 0.1); color: var(--primary); padding: 4px 10px; border-radius: 15px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(79, 57, 250, 0.2);}
+	
+	.tech-stack { display: flex; gap: 8px; flex-wrap: wrap; margin: 1.5rem 0; }
+	.tech-stack span { background: #1c2126; color: var(--secondary); padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; font-family: monospace; }
+	
+	.detalles-tecnicos { border-left: 3px solid var(--primary); padding-left: 1.5rem; list-style: none; margin: 1.5rem 0; }
+	.detalles-tecnicos li { margin-bottom: 10px; color: #ddd; font-size: 0.95rem; }
+
+	.btn-github {
+		background: linear-gradient(45deg, var(--primary), #6c5ce7);
+		color: white;
+		text-decoration: none;
+		padding: 12px 24px;
+		border-radius: 8px;
+		font-weight: 700;
+		display: inline-block;
+		font-size: 0.9rem;
+	}
+
+	.privacidad-badge {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 0.8rem;
+		color: var(--text-muted);
+		background: rgba(255, 255, 255, 0.05);
+		padding: 8px;
+		border-radius: 6px;
+	}
+
+	.educacion-item { margin-bottom: 1.5rem; background: rgba(255,255,255,0.03); padding: 1.2rem; border-radius: 8px;}
+
+	footer { text-align: center; margin-top: 6rem; padding: 4rem 1.5rem; border-top: 1px solid #222; }
+	.social-links { display: flex; justify-content: center; gap: 20px; margin: 2rem 0; }
+	.social-icon { color: var(--text-muted); width: 50px; height: 50px; background: #111; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid #222; transition: 0.3s; text-decoration: none; }
+	.social-icon:hover { transform: translateY(-3px); border-color: var(--primary); color: white; box-shadow: 0 5px 15px rgba(79, 57, 250, 0.3); }
+	
+	.social-icon.github:hover { border-color: white; color: white; }
+	.social-icon.linkedin:hover { border-color: #0077b5; color: #0077b5; }
+	.social-icon.gmail:hover { border-color: #ea4335; color: #ea4335; }
+
+	@media (max-width: 480px) {
+		body { padding: 2rem 1rem; }
+		.detalles-tecnicos { padding-left: 1rem; }
+		.header-proyecto h3 { font-size: 1.1rem; }
+	}
+</style>
